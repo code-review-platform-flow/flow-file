@@ -16,3 +16,11 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  cloud:
+    gcp:
+      credentials:
+        location: file:${GOOGLE_APPLICATION_CREDENTIALS}
+      project-id: ${GCP_PROJECT_ID}
+      storage:
+        bucket: ${GCP_STORAGE_BUCKET}
